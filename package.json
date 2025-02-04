@@ -1,0 +1,9 @@
+{
+  "name": "valentine-surprise-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "framer-motion": "^10.0.0",
+    "lucide-react": "^0.24.0",
+    "react": "^18.0.0"
+  }
+}
