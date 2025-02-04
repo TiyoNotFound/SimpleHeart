@@ -11,11 +11,18 @@
         <h1>Happy Valentine's Day! 💖</h1>
         <div class="heart"></div>
         <button onclick="showMessage()">Click for a Surprise ❤️</button>
-        <div id="message" class="hidden">
-            <p>You're Amazing! 💕</p>
+    </div>
+
+    <!-- Hidden pop-up box -->
+    <div id="popup" class="popup hidden">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>You're Amazing! 💕</h2>
+            <p>On this special day, just know that you are loved and appreciated more than words can say. Happy Valentine's Day! 💖</p>
             <small>"Every moment with you is a treasure. Wishing you endless love and joy!"</small>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
