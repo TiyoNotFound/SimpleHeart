@@ -1,3 +1,7 @@
 function showMessage() {
-    document.getElementById("message").classList.remove("hidden");
+    document.getElementById("popup").classList.add("show");
+}
+
+function closePopup() {
+    document.getElementById("popup").classList.remove("show");
 }
