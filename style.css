@@ -1,3 +1,4 @@
+/* Smooth animated background */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -17,6 +18,7 @@ body {
     100% { background-position: 0% 50%; }
 }
 
+/* Main content */
 .container {
     background: white;
     padding: 30px;
@@ -29,6 +31,7 @@ h1 {
     color: #ff3e6b;
 }
 
+/* Button */
 button {
     margin-top: 15px;
     padding: 10px 20px;
@@ -38,12 +41,14 @@ button {
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
+    transition: 0.3s;
 }
 
 button:hover {
     background: #d92b52;
 }
 
+/* Heart animation */
 .heart {
     width: 50px;
     height: 50px;
@@ -79,12 +84,56 @@ button:hover {
     50% { transform: scale(1.2) rotate(-45deg); }
 }
 
+/* Pop-up box */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    max-width: 400px;
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.popup-content h2 {
+    color: #ff3e6b;
+}
+
+.popup-content p {
+    color: #333;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Hidden class */
 .hidden {
     display: none;
 }
 
-#message {
-    margin-top: 20px;
-    font-size: 18px;
-    color: #d92b52;
+/* Show pop-up with animation */
+.show {
+    display: flex;
+}
+
+.show .popup-content {
+    transform: scale(1);
 }
